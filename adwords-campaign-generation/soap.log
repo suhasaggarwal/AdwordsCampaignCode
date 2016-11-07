@@ -1,0 +1,67 @@
+***********
+2016-11-01 16:58:15,104  WARN AdsServiceLoggers: 
+***********
+SOAP Request:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Header>
+        <ns1:RequestHeader xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201609" soapenv:mustUnderstand="0">
+            <ns1:clientCustomerId>759-344-3463</ns1:clientCustomerId>
+            <ns1:developerToken>REDACTED</ns1:developerToken>
+            <ns1:userAgent>AdWordsApi (AwApi-Java, AdWords-Axis/2.20.0, Common-Java/2.20.0, Axis/1.4, Java/1.7.0_79, maven)</ns1:userAgent>
+            <ns1:validateOnly>false</ns1:validateOnly>
+            <ns1:partialFailure>false</ns1:partialFailure>
+        </ns1:RequestHeader>
+    </soapenv:Header>
+    <soapenv:Body>
+        <mutate xmlns="https://adwords.google.com/api/adwords/cm/v201609">
+            <operations>
+                <operator>ADD</operator>
+                <operand>
+                    <name>Interplanetary Cruise #1477999680579</name>
+                    <amount>
+                        <microAmount>500</microAmount>
+                    </amount>
+                    <deliveryMethod>STANDARD</deliveryMethod>
+                </operand>
+            </operations>
+        </mutate>
+    </soapenv:Body>
+</soapenv:Envelope>
+
+***********
+2016-11-01 16:58:15,105  WARN AdsServiceLoggers: 
+***********
+SOAP Response:
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Header>
+        <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201609">
+            <requestId>0005403b9ecefa300a624983e60fe353</requestId>
+            <serviceName>BudgetService</serviceName>
+            <methodName>mutate</methodName>
+            <operations>1</operations>
+            <responseTime>211</responseTime>
+        </ResponseHeader>
+    </soap:Header>
+    <soap:Body>
+        <soap:Fault>
+            <faultcode>soap:Server</faultcode>
+            <faultstring>[BudgetError.MONEY_AMOUNT_LESS_THAN_CURRENCY_MINIMUM_CPC @ operations[0].operand.amount]</faultstring>
+            <detail>
+                <ApiExceptionFault xmlns="https://adwords.google.com/api/adwords/cm/v201609">
+                    <message>[BudgetError.MONEY_AMOUNT_LESS_THAN_CURRENCY_MINIMUM_CPC @ operations[0].operand.amount]</message>
+                    <ApplicationException.Type>ApiException</ApplicationException.Type>
+                    <errors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="BudgetError">
+                        <fieldPath>operations[0].operand.amount</fieldPath>
+                        <trigger/>
+                        <errorString>BudgetError.MONEY_AMOUNT_LESS_THAN_CURRENCY_MINIMUM_CPC</errorString>
+                        <ApiError.Type>BudgetError</ApiError.Type>
+                        <reason>MONEY_AMOUNT_LESS_THAN_CURRENCY_MINIMUM_CPC</reason>
+                    </errors>
+                </ApiExceptionFault>
+            </detail>
+        </soap:Fault>
+    </soap:Body>
+</soap:Envelope>
+

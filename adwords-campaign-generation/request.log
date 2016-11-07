@@ -1,0 +1,8 @@
+***********
+2016-11-01 16:58:14,790  INFO AdsServiceLoggers: 
+***********
+Request made: Service: "BudgetServiceInterfacePort" Method: "mutate" URL: "https://adwords.google.com/api/adwords/cm/v201609/BudgetService" Request ID: "0005403b9ecefa300a624983e60fe353"
+***********
+2016-11-01 16:59:33,446  INFO AdsServiceLoggers: 
+***********
+Request made: Service: "BudgetServiceInterfacePort" Method: "mutate" URL: "https://adwords.google.com/api/adwords/cm/v201609/BudgetService" Request ID: "0005403ba37b53d10a62909ab90ad0a8"
