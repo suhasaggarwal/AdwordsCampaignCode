@@ -106,8 +106,7 @@
           <finalName>singlejar</finalName>
           <outputDirectory>${jarOutputDirectory}</outputDirectory>
           <transformers>
-            <transformer
-                implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+            <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
               <mainClass>${smokeMainClass}</mainClass>
             </transformer>
           </transformers>
@@ -126,7 +125,7 @@
     <dependency>
       <groupId>com.google.api-ads</groupId>
       <artifactId>adwords-axis</artifactId>
-      <version>2.20.0</version>
+      <version>2.22.0</version>
     </dependency>
 
     <!-- Third party dependencies -->
