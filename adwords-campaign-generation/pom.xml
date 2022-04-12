@@ -106,8 +106,7 @@
           <finalName>singlejar</finalName>
           <outputDirectory>${jarOutputDirectory}</outputDirectory>
           <transformers>
-            <transformer
-                implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+            <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
               <mainClass>${smokeMainClass}</mainClass>
             </transformer>
           </transformers>
@@ -133,7 +132,7 @@
     <dependency>
       <groupId>com.google.http-client</groupId>
       <artifactId>google-http-client-jackson2</artifactId>
-      <version>1.22.0</version>
+      <version>1.41.4</version>
     </dependency>
 
     <!-- Configuration to use log4j for logging -->
